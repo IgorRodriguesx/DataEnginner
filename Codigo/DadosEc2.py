@@ -28,7 +28,7 @@ def carregar_dados(conn, df, tabela, colunas):
         print(e)
         conn.rollback()
         
-conn = psycopg2.connect(host='localhost', port='5432', database='postgres', user='admin', password='admin')
+conn = psycopg2.connect(host='localhost', port='5432', database='postgres', user='admin', password='')
         
 carregar_dados(conn, cobranca_pacientes, 'cobranca_paciente', ('definicao', 
                                                             'identificacao',
