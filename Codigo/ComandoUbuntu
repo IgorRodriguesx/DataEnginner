@@ -1,0 +1,4 @@
+//conexao e envio ao RDS
+
+pg_dump --dbname postgres --host localhost --port 5432 --format=custom --username admin > clinica-local.dump
+pg_restore --dbname postgres --host alura-care.cmaavfgd6cza.sa-east-1.rds.amazonaws.com --port 5432 --username postgres clinica-local.dump --no-owner
