@@ -2,5 +2,5 @@ sudo apt-get update
 sudo apt install postgresql postgresql-contrib
 sudo -u postgres psql
 psql
-CREATE USER admin WITH PASSWORD 'admin';
+CREATE USER admin WITH PASSWORD '';
 ALTER USER admin WITH SUPERUSER;
